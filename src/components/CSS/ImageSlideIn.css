@@ -1,0 +1,7 @@
+.container{
+    background-color: var(--background);
+}
+
+.modal{
+    filter: drop-shadow(15px 15px 25px black);
+}

@@ -1,0 +1,55 @@
+@keyframes logo_rotator {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes NameChangeEffect {
+    from {
+        transform: scaleY(0)
+    }
+
+    to {
+        transform: scaleY(1)
+    }
+}
+
+.nav-bar{
+    color: var(--text-color);
+}
+
+.scroll{
+    background-color: rgba(225,225,225,0.9);
+}
+
+
+
+.image-container{
+    width: 50%;
+}
+.image-container img {
+    animation: logo_rotator 4s linear infinite forwards;
+}
+
+.name{
+    width: 50%;
+}
+.name span{
+    animation: NameChangeEffect 0.5s linear ;
+    color: var(--secondary);
+    font-size: larger;
+}
+
+.nav-links ul li a {
+    transition: all 0.1s ease-in;
+}
+
+.nav-links ul li a:hover {
+    color: var(--secondary);
+}
+
+
